@@ -24,7 +24,7 @@ type IIsUpdate = {
 	isUpdate: (formData: IFormData) => void;
 };
 export const ArticleParamsForm = ({ isUpdate }: IIsUpdate) => {
-	const [open, setOpen] = useState<boolean>(false);
+	const [open, setOpen] = useState(false);
 	const [form, setForm] = useState<IFormData>(defaultArticleState);
 	const rootRef = useRef<HTMLDivElement>(null);
 
